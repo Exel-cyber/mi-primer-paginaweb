@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer website! </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <main>
+    <div class="container-nav">
+    
+        <nav class="navbar">
+            <a href="#" class="brand">Mi página web</a>
+            <ul class="nav-links nav-links-responsive">
+
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="acerca-de.html">Acerca de</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+
+            </ul>
+        </nav>
+        
+        <button class="button-menu-toggle">Menu</button>
+    </div>
+
+    <div class="container">
+        <h1>
+            Bienvenidos a mi primer Website!
+        </h1>
+
+        <button name="bienvenida" onclick="showAlert1()"> ¡Haz click aqui! </button>
+
+        <div class="row">
+            <div class="column">
+
+                <img class="image1"
+                    src="data:image/jpeg;base64,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">
+              
+                <section>
+                    <p>
+                        ¡Soy Ezequiel Cordoba, y esta es mi primera página web!
+                        <button name="autoconcepto" onclick="showAlert()"> Autoconcepto </button>
+                    <div>
+                        <li class="1">Programa <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/a">Diccionario de codigo</a></li>
+                        <li class="2">Practica <a href="https://codepen.io/">Codopen </a> </li>
+                        <li class="3">Esforzate <a href="https://www.biblegateway.com/passage/?search=Josu%C3%A9%201%3A9&version=RVR1960">Josué 1:9</a> </li>
+                    </div>
+                    </p>
+                    <div class="column">
+                        <p1>
+
+                            Estoy aprendiendo desarrollo web para crear sitios web visualmente atrapantes y funcionales.
+                            A lo largo de este curso, estaré aprendiendo HTML, CSS y JavaScript. Estos lenguajes me
+                            ayudarán a crear una base sólida en el desarrollo web front-end.
+                        </p1>
+                    </div>
+                </section>
+
+                <h2>
+                    ¿Quien soy Yo?
+                </h2>
+                <div class="column">
+                    <p2>
+                        Un Chico buscando hacer las cosas de la mejor manera posible, apreendiendo y buscando como
+                        superararse cada día.
+                        Buscando vivir bien en esta vida que al fin y al cabo es como la sombra y neblina.
+                        que hoy está, pero mañana se la lleva el viento.
+                        <em>Soy un hijo de Dios Buscando reflejar a Cristo!.</em>
+                        Te dejo una de mis canciones favoritas. Espero que la disfrutes!
+                    </p2>
+                    <iframe width="640" height="360" src="https://www.youtube.com/embed/vb9kikuQgxU" title="Mi Alma Esperará (Video Oficial)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                
+                </div>
+                <div class="column">
+                    <p3>
+                        Soy miembro de una familia numerosa, lo cual es muy lindo!. pero si bien así como se multiplica
+                        el amor, se multiplica todo. En fin mi familia:
+                    </p3>
+                </div>
+                <table>
+                    <tr>
+                        <th> familia</th>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Edad</th>
+                    </tr>
+                    <tr>
+                        <td>Ezequiel </td>
+                        <td>Cordoba </td>
+                        <td>19 </td>
+                    </tr>
+                    <tr>
+                        <td>Jorge </td>
+                        <td>Cordoba</td>
+                        <td>45</td>
+                    </tr>
+                    <tr>
+                        <td>Marisa </td>
+                        <td>Madrid </td>
+                        <td>42 </td>
+                    </tr>
+                    <tr>
+                        <td>jeremias</td>
+                        <td>Cordoba </td>
+                        <td>17 </td>
+                    </tr>
+                    <tr>
+                        <td>Jazmin</td>
+                        <td>cordoba </td>
+                        <td>15 </td>
+                    </tr>
+                    <tr>
+                        <td>Brisa </td>
+                        <td>Cordoba </td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>Isaias </td>
+                        <td>Cordoba </td>
+                        <td>10 </td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js">
+    </script>
+
+    <footer>
+        <p4>Todavia esta en proceso  </p4>
+    </footer>
+</main>
+</body>
+
+</html>
